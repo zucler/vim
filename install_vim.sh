@@ -14,7 +14,9 @@ vim +PluginInstall +qall
 # Installing base16 colors for shell
 git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
 
+if [ -f ~/bashrc ]; then
 source ~/.bashrc
+fi
 
 if [ -z "$BASE16_SHELL" ]
 then
