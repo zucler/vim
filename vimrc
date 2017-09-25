@@ -1,5 +1,5 @@
-let &t_Co=256
-syntax enable
+let &t_Co=256                   " allow 256 colour
+syntax enable                   " enable syntax highlighting
 
 set nu                          " display line numbers
 set rnu                         " display relative line numbers 
@@ -27,3 +27,9 @@ set scrolloff=3                 " minimum lines to keep above and below cursor
 set wrap                        " wrap long lines
 set laststatus=2                " always display a statusline
 set clipboard=unnamed           " sets system clipboard
+
+""" VUNDLE SPECIFIC CONFIGURATION """
+
+
+
+""" VUNDLE SPECIFIC CONFIGURATION END """
