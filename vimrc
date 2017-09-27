@@ -28,6 +28,13 @@ set wrap                        " wrap long lines
 set laststatus=2                " always display a statusline
 set clipboard=unnamed           " sets system clipboard
 
+" Persistent undo
+set undofile
+set undodir=$HOME/.vim/undo
+
+set undolevels=1000
+set undoreload=10000
+
 " base 16 colourscheme
 if filereadable(expand("~/.vimrc_background"))
     let base16colorspace=256

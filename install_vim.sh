@@ -18,6 +18,10 @@ if [ -f ~/bashrc ]; then
 source ~/.bashrc
 fi
 
+if [ !-d ~/.vim/undo ]; then
+mkdir -p ~/.vim/undo
+fi
+
 if [ -z "$BASE16_SHELL" ]
 then
 cat >> ~/.bashrc <<- EOM
