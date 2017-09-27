@@ -47,6 +47,9 @@ let g:syntastic_python_checkers=['flake8']
 " CtrlP configuration
 let g:ctrlp_clear_cache_on_exit = 0
 
+" YouCompleteMe configuration
+let g:loaded_youcompleteme = 0  " Disabled by default
+
 """ VUNDLE SPECIFIC CONFIGURATION
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -63,6 +66,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'bling/vim-bufferline'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
+Plugin 'Valloric/YouCompleteMe'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
