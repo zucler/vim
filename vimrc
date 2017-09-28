@@ -48,11 +48,6 @@ let g:syntastic_python_checkers=['flake8']
 let g:ctrlp_map = '<c-\>'
 let g:ctrlp_clear_cache_on_exit = 0
 
-" YouCompleteMe configuration
-" let g:loaded_youcompleteme = 0  " Disabled by default
-let g:ycm_key_list_select_completion=[]
-let g:ycm_key_list_previous_completion=[]
-
 " UtilSnips configuration
 let g:ultisnips_python_style = 'google'
 let g:UltiSnipsExpandTrigger="<tab>"                                            
@@ -75,7 +70,6 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'bling/vim-bufferline'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'SirVer/ultisnips'
 Plugin 'zucler/vim-snippets'
 
