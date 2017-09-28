@@ -45,10 +45,19 @@ endif
 let g:syntastic_python_checkers=['flake8']
 
 " CtrlP configuration
+let g:ctrlp_map = '<c-\>'
 let g:ctrlp_clear_cache_on_exit = 0
 
 " YouCompleteMe configuration
-let g:loaded_youcompleteme = 0  " Disabled by default
+" let g:loaded_youcompleteme = 0  " Disabled by default
+let g:ycm_key_list_select_completion=[]
+let g:ycm_key_list_previous_completion=[]
+
+" UtilSnips configuration
+let g:ultisnips_python_style = 'google'
+let g:UltiSnipsExpandTrigger="<tab>"                                            
+let g:UltiSnipsJumpForwardTrigger="<tab>"                                       
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 """ VUNDLE SPECIFIC CONFIGURATION
 " set the runtime path to include Vundle and initialize
@@ -67,6 +76,8 @@ Plugin 'bling/vim-bufferline'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'SirVer/ultisnips'
+Plugin 'zucler/vim-snippets'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
