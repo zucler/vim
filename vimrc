@@ -27,6 +27,7 @@ set scrolloff=3                 " minimum lines to keep above and below cursor
 set wrap                        " wrap long lines
 set laststatus=2                " always display a statusline
 set clipboard=unnamed           " sets system clipboard
+set spell spelllang=en_au       " enables spellcheck
 
 " Persistent undo
 set undofile
