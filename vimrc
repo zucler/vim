@@ -28,7 +28,7 @@ set wrap                        " wrap long lines
 set laststatus=2                " always display a statusline
 set clipboard=unnamed           " sets system clipboard
 set spell spelllang=en_au       " enables spellcheck
-
+set path+=**                    " searches down into sub-folders
 " Persistent undo
 set undofile
 set undodir=$HOME/.vim/undo
@@ -44,10 +44,6 @@ endif
 
 " Syntastic configuration
 let g:syntastic_python_checkers=['flake8']
-
-" CtrlP configuration
-let g:ctrlp_map = '<c-\>'
-let g:ctrlp_clear_cache_on_exit = 0
 
 " UtilSnips configuration
 let g:ultisnips_python_style = 'google'
@@ -68,7 +64,6 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'bling/vim-bufferline'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
