@@ -2,7 +2,7 @@ let &t_Co=256                   " allow 256 colour
 syntax enable                   " enable syntax highlighting
 
 set nu                          " display line numbers
-set rnu                         " display relative line numbers
+" set rnu                         " display relative line numbers
 set tabstop=4                   " sets a number of spaces per TAB
 set shiftwidth=4                " sets a number of spaces to use for each step of autoindent
 set softtabstop=4               " a combination of spaces and tabs are used to simulate tab stops at a width other than the (hard)tabstop
@@ -29,10 +29,16 @@ set laststatus=2                " always display a statusline
 set clipboard=unnamed           " sets system clipboard
 set spell spelllang=en_au       " enables spellcheck
 set path+=**                    " searches down into sub-folders
+
+" Create new tag alias
+" - ^[ : go to tag
+" - g^[ : list all matching tags
+" - ^t : back up the tag stack
+command! MakeTags !ctags -R --python-kinds=-i .
+
 " Persistent undo
 set undofile
 set undodir=$HOME/.vim/undo
-
 set undolevels=1000
 set undoreload=10000
 
