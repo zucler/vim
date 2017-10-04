@@ -58,6 +58,10 @@ let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 let g:UltiSnipsListSnippets='<c-l>'
 
+" Vim Autoformat configuration
+noremap <F1> :Autoformat<CR>
+noremap <F2> :RemoveTrailingSpaces<CR>
+
 """ VUNDLE SPECIFIC CONFIGURATION
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -76,6 +80,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'SirVer/ultisnips'
 Plugin 'zucler/vim-snippets'
 Plugin 'JamshedVesuna/vim-markdown-preview'
+Plugin 'Chiel92/vim-autoformat'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
