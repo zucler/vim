@@ -2,7 +2,7 @@ let &t_Co=256                   " allow 256 colour
 syntax enable                   " enable syntax highlighting
 
 set nu                          " display line numbers
-" set rnu                         " display relative line numbers
+set rnu                         " display relative line numbers
 set tabstop=4                   " sets a number of spaces per TAB
 set shiftwidth=4                " sets a number of spaces to use for each step of autoindent
 set softtabstop=4               " a combination of spaces and tabs are used to simulate tab stops at a width other than the (hard)tabstop
