@@ -71,7 +71,6 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'vim-syntastic/syntastic'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'bling/vim-bufferline'
@@ -81,6 +80,7 @@ Plugin 'SirVer/ultisnips'
 Plugin 'zucler/vim-snippets'
 Plugin 'JamshedVesuna/vim-markdown-preview'
 Plugin 'Chiel92/vim-autoformat'
+Plugin 'w0rp/ale'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
