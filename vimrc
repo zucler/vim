@@ -51,13 +51,6 @@ endif
 " Syntastic configuration
 let g:syntastic_python_checkers=['flake8']
 
-" UtilSnips configuration
-let g:ultisnips_python_style = 'google'
-let g:UltiSnipsExpandTrigger="<tab>"                                            
-let g:UltiSnipsJumpForwardTrigger="<tab>"                                       
-let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
-let g:UltiSnipsListSnippets='<c-l>'
-
 " Vim Autoformat configuration
 noremap <F1> :Autoformat<CR>
 noremap <F2> :RemoveTrailingSpaces<CR>
@@ -76,8 +69,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'bling/vim-bufferline'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
-Plugin 'SirVer/ultisnips'
-Plugin 'zucler/vim-snippets'
+Plugin 'heavenshell/vim-pydocstring'
 Plugin 'JamshedVesuna/vim-markdown-preview'
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'w0rp/ale'
