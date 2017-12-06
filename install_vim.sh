@@ -31,3 +31,11 @@ BASE16_SHELL=\$HOME/.config/base16-shell/
 [ -n "\$PS1" ] && [ -s \$BASE16_SHELL/profile_helper.sh ] && eval "\$(\$BASE16_SHELL/profile_helper.sh)"
 EOM
 fi
+
+if [ ! -d ~/.vim/syntax ]; then
+mkdir -p ~/.vim/syntax
+fi
+
+cd ~/.vim/syntax
+curl http://www.vim.org/scripts/download_script.php\?src_id\=19394 --output nginx.vim
+echo "au BufRead,BufNewFile /etc/nginx/*,/usr/local/nginx/conf/* if &ft == '' | setfiletype nginx | endif" > ~/.vim/filetype.vim
