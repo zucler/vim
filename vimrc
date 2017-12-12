@@ -42,6 +42,9 @@ set undodir=$HOME/.vim/undo
 set undolevels=1000
 set undoreload=10000
 
+" Enable groovy syntax highlight for Jenkinsfiles
+echo 'au BufNewFile,BufRead Jenkinsfile setf groovy' >> ~/.vimrc
+
 " base 16 colourscheme
 if filereadable(expand("~/.vimrc_background"))
     let base16colorspace=256
