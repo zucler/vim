@@ -43,7 +43,7 @@ set undolevels=1000
 set undoreload=10000
 
 " Enable groovy syntax highlight for Jenkinsfiles
-echo 'au BufNewFile,BufRead Jenkinsfile setf groovy' >> ~/.vimrc
+au BufNewFile,BufRead Jenkinsfile setf groovy
 
 " base 16 colourscheme
 if filereadable(expand("~/.vimrc_background"))
