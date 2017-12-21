@@ -30,6 +30,16 @@ set clipboard=unnamed           " sets system clipboard
 set spell spelllang=en_au       " enables spellcheck
 set path+=**                    " searches down into sub-folders
 
+hi clear SpellBad
+hi clear SpellLocal
+hi clear SpellCap
+hi SpellBad cterm=underline ctermfg=red guifg=red
+hi SpellLocal cterm=underline ctermfg=green guifg=green
+hi SpellCap cterm=underline ctermfg=green guifg=green
+
+set cursorline
+hi CursorLine term=bold cterm=bold guibg=Grey40
+
 " Create new tag alias
 " - ^[ : go to tag
 " - g^[ : list all matching tags
