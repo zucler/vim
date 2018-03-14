@@ -27,18 +27,8 @@ set scrolloff=3                 " minimum lines to keep above and below cursor
 set wrap                        " wrap long lines
 set laststatus=2                " always display a statusline
 set clipboard=unnamed           " sets system clipboard
-set spell spelllang=en_au       " enables spellcheck
+set spell spelllang=en_au,ru_ru " enables spellcheck
 set path+=**                    " searches down into sub-folders
-
-hi clear SpellBad
-hi clear SpellLocal
-hi clear SpellCap
-hi SpellBad cterm=underline ctermfg=red guifg=red
-hi SpellLocal cterm=underline ctermfg=green guifg=green
-hi SpellCap cterm=underline ctermfg=green guifg=green
-
-set cursorline
-hi CursorLine term=bold cterm=bold guibg=Grey40
 
 " Create new tag alias
 " - ^[ : go to tag
@@ -52,17 +42,11 @@ set undodir=$HOME/.vim/undo
 set undolevels=1000
 set undoreload=10000
 
-" Enable groovy syntax highlight for Jenkinsfiles
-au BufNewFile,BufRead Jenkinsfile setf groovy
-
 " base 16 colourscheme
 if filereadable(expand("~/.vimrc_background"))
     let base16colorspace=256
     source ~/.vimrc_background
 endif
-
-" Syntastic configuration
-let g:syntastic_python_checkers=['flake8']
 
 " Vim Autoformat configuration
 noremap <F1> :Autoformat<CR>
@@ -86,8 +70,13 @@ Plugin 'heavenshell/vim-pydocstring'
 Plugin 'JamshedVesuna/vim-markdown-preview'
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'w0rp/ale'
+Plugin 'kchmck/vim-coffee-script'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 """ VUNDLE SPECIFIC CONFIGURATION END
+au BufNewFile,BufRead Jenkinsfile setf groovy
+autocmd BufNewFile,BufRead *.coffee   set filetype=coffee
+autocmd BufNewFile,BufRead Dockerfile*   set filetype=Dockerfile
+
