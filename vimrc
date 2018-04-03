@@ -71,6 +71,7 @@ Plugin 'JamshedVesuna/vim-markdown-preview'
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'w0rp/ale'
 Plugin 'kchmck/vim-coffee-script'
+Plugin 'lepture/vim-jinja'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -80,3 +81,4 @@ au BufNewFile,BufRead Jenkinsfile setf groovy
 autocmd BufNewFile,BufRead *.coffee   set filetype=coffee
 autocmd BufNewFile,BufRead Dockerfile*   set filetype=Dockerfile
 
+autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
