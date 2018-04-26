@@ -77,10 +77,10 @@ Plugin 'lepture/vim-jinja'
 call vundle#end()            " required
 filetype plugin indent on    " required
 """ VUNDLE SPECIFIC CONFIGURATION END
+
 au BufNewFile,BufRead Jenkinsfile setf groovy
 autocmd BufNewFile,BufRead *.coffee   set filetype=coffee
 autocmd BufNewFile,BufRead Dockerfile*   set filetype=Dockerfile
-
 autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
 
 hi clear SpellBad
@@ -95,3 +95,10 @@ hi SpellRare cterm=underline
 :autocmd Filetype ruby set softtabstop=2
 :autocmd Filetype ruby set sw=2
 :autocmd Filetype ruby set ts=2
+
+" Add command to insert new function comment block
+:function! Pycom()
+:    " ~/.vim/templates/python/block-comment.txt is the path to the block
+:    " comment template file
+:    r~/.vim/templates/python/block-comment.txt
+:endfunction
