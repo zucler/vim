@@ -72,6 +72,7 @@ Plugin 'Chiel92/vim-autoformat'
 Plugin 'w0rp/ale'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'lepture/vim-jinja'
+Plugin 'chase/vim-ansible-yaml'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -81,7 +82,8 @@ filetype plugin indent on    " required
 au BufNewFile,BufRead Jenkinsfile setf groovy
 autocmd BufNewFile,BufRead *.coffee   set filetype=coffee
 autocmd BufNewFile,BufRead Dockerfile*   set filetype=Dockerfile
-autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
+autocmd Filetype javascript,stylesheet,scss setlocal ts=2 sts=2 sw=2
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
 " Add command to insert new function comment block
 :function! Pycom()
