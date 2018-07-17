@@ -85,6 +85,19 @@ autocmd BufNewFile,BufRead Dockerfile*   set filetype=Dockerfile
 autocmd Filetype javascript,stylesheet,scss setlocal ts=2 sts=2 sw=2
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
+hi clear SpellBad
+hi clear SpellCap
+hi clear SpellLocal
+hi clear SpellRare
+hi SpellBad cterm=underline
+hi SpellCap cterm=underline
+hi SpellLocal cterm=underline
+hi SpellRare cterm=underline
+
+:autocmd Filetype ruby set softtabstop=2
+:autocmd Filetype ruby set sw=2
+:autocmd Filetype ruby set ts=2
+
 " Add command to insert new function comment block
 :function! Pycom()
 :    " ~/.vim/templates/python/block-comment.txt is the path to the block
