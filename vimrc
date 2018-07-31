@@ -105,3 +105,7 @@ hi SpellRare cterm=underline
 :    " comment template file
 :    r~/.vim/templates/python/block-comment.txt
 :endfunction
+
+" golang specific
+let g:go_fmt_command = "goimports"
+let g:ale_go_gometalinter_lint_package = 1
