@@ -29,6 +29,7 @@ set laststatus=2                " always display a statusline
 set clipboard=unnamed           " sets system clipboard
 set spell spelllang=en_au,ru_ru " enables spellcheck
 set path+=**                    " searches down into sub-folders
+set mouse=a
 
 " Create new tag alias
 " - ^[ : go to tag
