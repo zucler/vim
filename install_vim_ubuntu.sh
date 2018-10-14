@@ -22,4 +22,4 @@ vim -c "spell RU_RU" -c "quit"
 if [ ! -d ~/.vim/templates/python ]; then
 mkdir -p ~/.vim/templates/python
 fi
-cat python-google-docstring.txt > ~/.vim/templates/python/block-comment.txt
+cat ./python-google-docstring.txt > ~/.vim/templates/python/block-comment.txt
