@@ -74,6 +74,9 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'lepture/vim-jinja'
 Plugin 'chase/vim-ansible-yaml'
 Plugin 'fatih/vim-go'
+Plugin 'othree/yajs.vim'
+Plugin 'hashivim/vim-terraform'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -109,3 +112,9 @@ hi SpellRare cterm=underline
 " golang specific
 let g:go_fmt_command = "goimports"
 let g:ale_go_gometalinter_lint_package = 1
+let g:ale_linters = {
+\   'javascript': ['standard'],
+\}
+let g:ale_fixers = {'javascript': ['standard']}
+let g:ale_lint_on_save = 1
+let g:ale_fix_on_save = 1
