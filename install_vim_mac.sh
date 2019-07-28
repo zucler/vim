@@ -39,7 +39,7 @@ fi
 if [ ! -d ~/.vim/templates/python ]; then
 mkdir -p ~/.vim/templates/python
 fi
-cat python-google-docstring.txt > ~/.vim/templates/python/block-comment.txt
+cat ./python-google-docstring.txt > ~/.vim/templates/python/block-comment.txt
   
 cd ~/.vim/syntax
 curl http://www.vim.org/scripts/download_script.php\?src_id\=19394 --output nginx.vim
